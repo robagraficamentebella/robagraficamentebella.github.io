@@ -1,0 +1,109 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+.testo-tel-menu{
+    font-family: 'Calibri',sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: #aeb8fe;
+  opacity:0.8;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #27187e;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+  margin-left: 2em;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.hamburgher{
+    font-size:32px;
+    cursor:pointer;
+    color:#aeb8fe;
+    font-weight: bold;
+    margin-left:0.5em;
+    }
+
+.num-cap{
+    color: white;
+    font-size: 27pt;
+    font-weight: bold;
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content testo-tel-menu">
+        <a href="#"><span class="num-cap">01</span> Il layout</a>
+        <a href="#"><span class="num-cap">02</span> Aldo Novarese</a>
+        <a href="#"><span class="num-cap">03</span> Carattere e font</a>
+        <a href="#"><span class="num-cap">04</span> Gestire un testo</a>
+        <a href="#"><span class="num-cap">05</span> Il colore</a>
+        <a href="#"><span class="num-cap">06</span> La stampa</a>
+    </div>
+</div>
+
+
+<span class="hamburgher" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+</body>
+</html>

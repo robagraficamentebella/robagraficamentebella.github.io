@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css_esempio.css">
+
+    <!-- bootstrap  -->
+    <script src="js/jquery.jdSlider-latest.min.js"></script>
+
+    <!-- TUTT'APPò -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+
+
+
+</head>
+<body>
+
+    <div class="background" id="red-background" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()"></div>
+    <div class="background" id="white-background" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()"></div>
+    <div id="content">
+            <!-- hamburger -->
+            <div id="hamburger-open" class="hamburger" onmouseover="setRedBackgroundWidth()" onclick="showMenu() && hamburgerChange(this)" onmouseout="resetRedBackgroundWidth()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <ul id="menu" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()">
+                <!-- COSTRUZIONE di un LAYOUT -->
+                <li class="menu-list-padding-top">
+                    <div class="menu-element-max-height">
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('costruzione')" href="#">
+                            <span class="numero-capitolo">01</span>
+                            <div class="menu-title-padding-left">COSTRUZIONE di un LAYOUT</div>
+                        </a>
+                    </div>
+                    <ul class="sub-menu" id="costruzione">
+                        <li>
+                            <a class="sub-menu-elem" href="#slider-container">Margini e colonne</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#container-le-griglie">La griglia </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- ALDO Novarese -->
+                <li class="menu-list-padding-top">
+                    <div class="menu-element-max-height">
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('anatomia')" href="#">
+                            <span class="numero-capitolo">02</span>
+                            <div class="menu-title-padding-left">ALDO Novarese</div>
+                        </a>
+                    </div>
+                    <ul class="sub-menu" id="anatomia">
+                        <li>
+                            <a class="sub-menu-elem" href="#container-aldo">La classificazione dei caratteri</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#container-anatomia">Anatomia del carattere</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Carattere e FONT -->
+                <li class="menu-list-padding-top">
+                    <div class="menu-element-max-height">
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('font')" href="#">
+                            <span class="numero-capitolo">03</span>
+                            <div class="menu-title-padding-left">Carattere e FONT</div>
+                        </a>
+                    </div>
+                    <ul class="sub-menu" id="font">
+                            <li>
+                                <a class="sub-menu-elem" href="#container-aldo">Scegliere una font</a>
+                            </li>
+                        </ul>
+                </li>
+                <!-- Gestire un TESTO -->
+                <li class="menu-list-padding-top">
+                    <div class="menu-element-max-height">
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('stampa')" href="#">
+                            <span class="numero-capitolo">04</span>
+                            <div class="menu-title-padding-left">Gestire un TESTO</div>
+                        </a>
+                    </div>
+                    <ul class="sub-menu" id="stampa">
+                        <li>
+                            <a class="sub-menu-elem" href="#">Interlinea </a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#">Giustezza</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#">Allinenamento</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#">Gerarchia</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#">Formattazione</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Il COLORE -->
+                <li class="menu-list-padding-top">
+                    <div class="menu-element-max-height">
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('colore')" href="#">
+                            <span class="numero-capitolo">05</span>
+                            <div class="menu-title-padding-left">Il COLORE</div>
+                        </a>
+                    </div>
+                    <ul class="sub-menu" id="colore">
+                        <li>
+                            <a class="sub-menu-elem" href="#">RGB e CMYK</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- La STAMPA -->
+                <li class="menu-list-padding-top">
+                    <div class="menu-element-max-height">
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('testo')" href="#">
+                            <span class="numero-capitolo">06</span>
+                            <div class="menu-title-padding-left">La STAMPA</div>
+                        </a>
+                    </div>
+                    <ul class="sub-menu" id="testo">
+                        <li>
+                            <a class="sub-menu-elem" href="#">Offset</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#">Letterpress</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#">Digitale</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu-elem" href="#">Serigrafia</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+<script>
+    function checkResponsive() {
+        if( $( window ).width() < 600) {
+            $('body > div').hide();
+            $('#not-responsive').show();
+        } else {
+            $('body div').show();
+            $('#not-responsive').hide();
+        }
+    }
+
+    // ogni volta che viene ridimensionata la finestra, esegue il controllo sulla dimensione della pagina
+    $( window ).resize(function() {
+        checkResponsive();
+    });
+    // la funzione si avvia non appena la pagina viene caricata
+    checkResponsive();
+
+    // slideshow
+    $('.slider1').jdSlider();
+    $('.slider2').jdSlider();
+
+    $('.quadrati-verdi-title').tooltip({
+        tooltipClass: "tooltip-class",
+    });
+
+    var menu = document.getElementById('menu');
+    var whiteBackground = document.getElementById('white-background');
+    var redBackground = document.getElementById('red-background');
+
+    function hamburgerChange(elem) {
+        elem.classList.toggle("change");
+    }
+
+    function showMenu() {
+        if( menu.style.display == 'block' ) {
+            whiteBackground.style.width = 0;
+            menu.style.display = 'none';
+        } else {
+            whiteBackground.style.width = '25%'; // per aumentare la sezione lilla
+            menu.style.display = 'block';
+        }
+        return true;
+    }
+
+
+    function toggleSubMenu(id) {
+        var menuToShow = document.getElementById(id);
+        if( menuToShow.style.maxHeight == menuToShow.scrollHeight + "px" ) {
+            menuToShow.style.maxHeight = 0;
+        } else {
+            menuToShow.style.maxHeight = menuToShow.scrollHeight + "px";
+        }
+    }
+
+    positioning();
+
+</script>
+
+</body>
+</html>

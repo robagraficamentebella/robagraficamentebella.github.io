@@ -1,0 +1,505 @@
+html{
+scroll-behavior: smooth
+}
+
+.hide {
+    display:none;
+}
+
+#my-logo {
+    height: 24em;
+    margin-left:-1.6em;
+    text-align: center;
+}
+#abcdef {
+    height:14.5em;
+    text-align: center;
+}
+
+#anatomia-parte-uno {
+    height: 30em;
+    text-align: center;
+}
+#anatomia-parte-due {
+    height: 45em;
+    text-align: center;
+}
+.space {
+    height: 5em;
+}
+.space-2 {
+    height:10em;
+}
+
+#footer {
+    font-size:14pt;
+    line-height: 16pt;
+    background-color: #aeb8fe !important;
+}
+.aldo{
+    max-height:2em;
+}
+
+@media (max-width:767px) {
+    .mob-cap {
+        font-size:45pt;
+    }
+    #la{
+        font-size:26pt;
+     }
+    #abcdef {
+        height:4.8em;
+    }
+    #afgx {
+        margin-bottom: 1em;
+        max-height: 7em;
+    }
+    #gerarchia{
+        height:17em;
+        margin-bottom: 2em;
+    }
+    #allineamento {
+        font-size: 2.5em;
+    }
+    #vedove{
+        max-height: 19.5em;
+        padding-top: 2em;
+    }
+    #traking{
+        max-height: 3.4em;
+    }
+    #layout_arancione{
+        max-height:23em;
+    }
+    #cmyk{
+        max-height: 16em;
+        margin-left: 3.5em;
+        margin-top:3em;
+    }
+    #rgb{
+        max-height: 16em;
+        margin-left: 3.5em;
+        margin-top:3em;
+    }
+    #sagomato{
+       max-height:6.5em;
+    }
+    #informazioni {
+        font-size: 2.5em;
+    }
+    #my-logo {
+      height: 12em;
+      margin-top:6em;
+      margin-left: -22px;
+    }
+    #anatomia-parte-uno {
+        height: 13em;
+        margin-left: 1.3em;
+    }
+    #serigrafia {
+         max-height: 13em;;
+    }
+    #fi{
+         max-height:4.5em;
+    }
+    #palette{
+        max-height: 18em;
+    }
+    #anatomia-parte-due {
+        height: 24em;
+        margin-left:1.5em;
+        margin-bottom: 2em;
+    }
+    #letterpress{
+        max-height:14.5em
+    }
+    #digitale{
+        max-height:11.5em
+    }
+    #offset{
+        max-height:15.3em
+    }
+    #offset2{
+      max-height:6.5em;
+    }
+    #aldo-mob{
+        max-height: 27em;
+        margin-top: 2em;
+    }
+    #formattazione {
+         font-size: 2.5em;
+    }
+    #mob-footer{
+        color:white;
+        font-size:9pt;
+    }
+    .inline-block {
+         display:inline-block !important;
+   }
+   .titles-pt {
+      font-size:24pt !important;
+      line-height: 12pt !important;
+   }
+   .titles-em {
+      font-size:24pt !important;
+      line-height: 1em !important;
+   }
+   .lilla {
+        color: #27187e !important;
+   }
+    #font2 {
+        font-size:24pt;
+        line-height: 1.2em;;
+    }
+    #testo2{
+       font-size:24pt;
+       line-height: 1.2em;;
+    }
+    #interlinea{
+        font-size:24pt;
+        line-height: 0.2em;;
+    }
+    #mob-lilla-margini{
+        font-size:30pt;
+        line-height: 1em;
+    }
+    .subtitles-em {
+         font-size:30pt;
+         line-height: 1em;
+    }
+     #mob-lilla-lunghezza{
+            font-size:30pt;
+            line-height: 0.5em;
+     }
+     #mob-lilla-colore{
+            font-size:30pt;
+            line-height: 1em;
+     }
+     #mob-lilla-stampa{
+             font-size:35pt;
+             line-height: 1em;
+     }
+   .puntini{
+        max-height:4.5em;
+   }
+    .mob-pad-right-2 {
+        padding-right: 2em;
+    }
+     .mob-size{
+        font-size:14pt;
+        font-weight: 600;
+     }
+     .mob-size-2{
+        font-size:16pt;
+        line-height: 1em;
+     }
+     .mob-size-3{
+         font-size:16pt;
+         line-height:0em;
+     }
+     .mob-size-4{
+         font-size:28pt;
+         line-height:0em;
+     }
+     .mob-size-5{
+        font-size:28pt;
+     }
+     .mob-cose-da-ricordare{
+        font-size:20pt;
+     }
+    .mob-giustificato{
+        max-height: 10em;
+        padding-top: 0.3em;
+    }
+    .mob-mar-top-2 {
+        margin-top: 2em;
+    }
+    .mob-mar-top-3 {
+         margin-top: 1em;
+     }
+    .mob-mar-left-2 {
+         margin-left: 4em;
+    }
+    .mob-mar-left-3 {
+         margin-left: 0.5em;
+    }
+    .mob-mar-left-4 {
+         margin-left:4em;
+         margin-top:2em;
+    }
+    .mob-rettangolo{
+         margin: 1em;
+         margin-bottom: 3em;
+    }
+    .mob-rettangolo-allineamento{
+         margin:2em;
+    }
+    .mob-bottom-neg{
+        margin-bottom:-0.8em;
+    }
+    .lettere {
+          margin:1em;
+          margin-left: 7.5em;
+    }
+    .mob-hidden {
+        display: none;
+    }
+    .mob-margin-1 {
+        margin: 1em;
+    }
+    .mob-margin-2 {
+       margin: 5em;
+    }
+    .mob-margin-3 {
+       margin: 2em;
+       margin-right: 2.5em;
+    }
+    .mob-margin-4 {
+         margin: 3em;
+     }
+    .mob-margin-5 {
+         margin: 2em;
+    }
+    .mob-space {
+        height:3em;
+    }
+    .mob-space-2 {
+         height:4em;
+    }
+    .mob-space-3 {
+          height:0em;
+    }
+    .mob-space-neg{
+        margin-top: -4em;
+        }
+    .mob-space-neg-2{
+        margin-top: -1.8em;
+    }
+    .mob-space-neg-3{
+         margin-top: -3em;
+    }
+    .mob-space-neg-4{
+         margin-top: -6em;
+    }
+    .mob-space-neg-5{
+         margin-top: -8em;
+    }
+    #rettangolo-mob{
+        box-shadow: 10px 10px 10px;
+        rgba(179, 187, 255, 0.4);
+}
+}
+
+ @media screen and (min-width:600px) {
+ .nascondi{
+     display:none;
+ }
+ }
+
+@media screen and (min-width: 600px) {
+ #nascondi2{
+      display:none;
+ }
+ }
+
+.sfondo{
+    background: url("../img/sfondo.portrait1.png");
+    background-size: 100%;
+    background-attachment: scroll;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:#27187e;
+}
+
+.titoli-testi{
+    color: #aeb8fe;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: -12pt;
+}
+
+.titoli-testi-blu{
+    color: #27187e;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: -12pt;
+}
+
+.titolo-capitolo-blu{
+    color: #27187e;
+    font-size: 50pt;
+    font-weight: bold;
+    line-height: 40pt;
+}
+
+.titolo-capitolo-lilla{
+    color: #aeb8fe;
+    font-size: 40pt;
+    font-weight: bold;
+    line-height: 40pt;
+}
+
+.parole-lilla{
+    color: #aeb8fe;
+    font-size: 18pt;
+    font-weight:bold;
+}
+
+.titolo-capitolo-blu-regular{
+    color: #27187e;
+    font-size: 40pt;
+    line-height: 20pt;
+}
+
+.numero-cap{
+    color: #cdd079;
+    font-size: 60pt;
+    font-weight: bold;
+    line-height: 40pt;
+}
+
+.numero-capitolo-lilla{
+    color: #aeb8fe;
+    font-size: 60pt;
+    font-weight: bold;
+    line-height: 40pt;
+}
+
+.titolo-lilla{
+    color: #aeb8fe;
+    font-size: 60pt;
+    font-family: "Bodoni";
+    font-style: italic;
+}
+
+.paragrafi{
+    color: #27187e;
+}
+
+.parole-arancioni{
+    color:#ff8600;
+    font-weight: bold;
+}
+
+.parole-verdi{
+    color:#cdd079;
+    font-weight: bold;
+}
+
+.rettangolo{
+    background-color: #aeb8fe;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    padding-left: 20pt;
+    border-radius: 20px;
+    margin-top: 1em;
+    box-shadow: 20px 20px 20px rgba(179, 187, 255, 0.4);
+}
+.img-giustificato{
+    height:13em;
+}
+
+.gerarchia{
+    height:27em;
+}
+.quadrato{
+    background-color: #aeb8fe;
+    margin-left: 20;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #dedede;
+}
+
+.ombra{
+    box-shadow: 15px 15px 15px rgba(230, 230, 230,0.4);
+    }
+
+.testo-bianco{
+    color: white;
+    font-size: 11pt;
+}
+
+.testo-italic{
+    font-style: italic;
+    color:#27187e;
+    line-height: 12pt;
+    font-size: 18pt;
+}
+
+.testo-italic-lilla{
+     color: #aeb8fe;
+     font-size: 22pt;
+     font-family:"Bodoni";
+     font-style:italic;
+}
+
+.luminosità{
+    color: white;
+    text-shadow:1px 1px 3px white;
+}
+
+.interlinea{
+    font-size:20pt;
+    text-align:center;
+    color: white;
+    text-shadow:1px 1px 5px white;
+}
+
+.no-padding {
+    padding: 0; }
+
+.go-bottom {
+    position:absolute;
+    bottom:0;
+}
+
+.go-top {
+    margin-top: -22;
+}
+
+.border-radius {
+    border-radius: 20px;
+ }
+
+ .border-radius-2{
+     border-radius: 40px;
+  }
+
+.vuoto{
+    background-color: rgba(128,128,128,0);
+    height:30px;
+}
+.vuoto-2{
+    background-color: rgba(128,128,128,0);
+    height:5px;
+}
+
+.blu{
+    background-color: blue;
+
+}
+
+.rosso{
+    background-color: red;
+    height:30px;
+}
+
+.immagine{
+    background-color: pink;
+}
+
+.class-caratteri{
+    height:100px;
+}
+
+/* menù*/
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+

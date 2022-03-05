@@ -1,0 +1,121 @@
+.numero-capitolo{
+    color: white;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+#white-background {
+    transition-timing-function: cubic-bezier(1, 1, 1, 1);
+    transition: width 0.5s;
+    width: 0%;
+    background-color: #aeb8fe;
+    z-index: 2;
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* tutto il resto... */
+#content {
+    position:relative;
+    z-index: 2;
+}
+
+/* hamburger buttons */
+#hamburger-open {
+    position: absolute;
+    left: 2%;
+    font-size: 2.4em;
+    cursor: pointer;
+    margin-top: 8em
+
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #aeb8fe;
+  margin: 4px 0;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color:white;
+}
+
+.change .bar2 {opacity: 0;}
+
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: white;
+}
+
+/* menù */
+#menu li {
+    list-style-type: none;
+}
+
+.menu-title-padding-left {
+    padding-left: 0.5em;
+}
+
+.menu-list-padding-top {
+    padding-top: 0.6em;
+}
+
+.menu-element-max-height {
+    max-height: 4.7em;
+}
+
+#menu {
+    font-family:"Arial", sans-serif;
+    font-weight:bold;
+    display: none;
+    position: absolute;
+    left: 3%;
+    margin-top:40px;
+    line-height:54px;
+    position:fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+a.menu-elem {
+    text-decoration: none;
+    color: #27187e;
+    line-height: 2px;
+    font-size: 18px;
+    transition: 0.5s;
+    padding: 0.5em;
+}
+
+a.menu-elem:hover {
+    color: #ff8600;
+    text-decoration: none;
+}
+
+/* sottomenu*/
+.sub-menu {
+    font-size: 10pt;
+    line-height: 2em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+a.sub-menu-elem {
+    text-decoration: none;
+    transition: 0.5s;
+    padding-left: 0.5em;
+    color: white;
+}
+a.sub-menu-elem:hover {
+    text-decoration: none;
+    padding-left: 2em;
+    color: #ff8600;
+}

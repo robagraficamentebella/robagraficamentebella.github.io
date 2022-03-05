@@ -1,0 +1,2459 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="img/title.png">
+    <title>RGB | Roba Graficamente Bella</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menu.telefono.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body class="sfondo">
+<!--menù-->
+<section
+>
+    <div class="background" id="red-background" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()"></div>
+    <div class="background" id="white-background" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()"></div>
+    <div id="content">
+        <!-- hamburger -->
+        <div id="hamburger-open" class="hamburger mob-hidden" onmouseover="setRedBackgroundWidth()" onclick="showMenu() && hamburgerChange(this)" onmouseout="resetRedBackgroundWidth()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <ul id="menu" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()">
+            <!-- COSTRUZIONE di un LAYOUT -->
+            <li class="menu-list-padding-top">
+                <div class="menu-element-max-height">
+                    <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('costruzione')" href="#1">
+                        <span class="numero-capitolo">01</span>
+                        <div class="menu-title-padding-left">Il LAYOUT</div>
+                    </a>
+                </div>
+                <ul class="sub-menu" id="costruzione">
+                    <li>
+                        <a class="sub-menu-elem" href="#1.1">Margini e colonne</a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#1.2">La griglia </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- ALDO Novarese -->
+            <li class="menu-list-padding-top">
+                <div class="menu-element-max-height">
+                    <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('anatomia')" href="#2">
+                        <span class="numero-capitolo">02</span>
+                        <div class="menu-title-padding-left">ALDO Novarese</div>
+                    </a>
+                </div>
+                <ul class="sub-menu" id="anatomia">
+                    <li>
+                        <a class="sub-menu-elem titles-em" href="#2.1">La classificazione dei caratteri</a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#2.2">Anatomia del carattere</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Carattere e FONT -->
+            <li class="menu-list-padding-top">
+                <div class="menu-element-max-height">
+                    <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('font')" href="#3">
+                        <span class="numero-capitolo">03</span>
+                        <div class="menu-title-padding-left">Carattere e FONT</div>
+                    </a>
+                </div>
+                <ul class="sub-menu" id="font">
+                    <li>
+                        <a class="sub-menu-elem" href="#3.1">Scegliere una font</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Gestire un TESTO -->
+            <li class="menu-list-padding-top">
+                <div class="menu-element-max-height">
+                    <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('stampa')" href="#4">
+                        <span class="numero-capitolo">04</span>
+                        <div class="menu-title-padding-left">Gestire un TESTO</div>
+                    </a>
+                </div>
+                <ul class="sub-menu" id="stampa">
+                    <li>
+                        <a class="sub-menu-elem" href="#4.1">Interlinea </a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#4.2">Giustezza</a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#4.3">Allineamento</a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#4.4">Gerarchia</a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#4.5">Formattazione</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Il COLORE -->
+            <li class="menu-list-padding-top">
+                <div class="menu-element-max-height">
+                    <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('colore')" href="#5">
+                        <span class="numero-capitolo">05</span>
+                        <div class="menu-title-padding-left">Il COLORE</div>
+                    </a>
+                </div>
+                <ul class="sub-menu" id="colore">
+                    <li>
+                        <a class="sub-menu-elem" href="#5.1">RGB e CMYK</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- La STAMPA -->
+            <li class="menu-list-padding-top">
+                <div class="menu-element-max-height">
+                    <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('testo')" href="#6">
+                        <span class="numero-capitolo">06</span>
+                        <div class="menu-title-padding-left">La STAMPA</div>
+                    </a>
+                </div>
+                <ul class="sub-menu" id="testo">
+                    <li>
+                        <a class="sub-menu-elem" href="#6.1">Offset</a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#6.2">Serigrafia</a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#6.3">Letterpress</a>
+                    </li>
+                    <li>
+                        <a class="sub-menu-elem" href="#6.4">Digitale</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Nulla-->
+            <li class="menu-list-padding-top">
+                <div class="menu-element-max-height">
+                    <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('testo')" href="#">
+                        <div class="menu-title-padding-left"></div>
+                    </a>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--menù telefono-->
+<section>
+    <div class="container" id="nascondi2">
+        <div class="row">
+            <div class="col-12 fascia">
+                <span class="hamburgher" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#mob-cap-01"><span class="num-cap">01</span> Il layout</a>
+            <a href="#mob-cap-02"><span class="num-cap">02</span> Aldo Novarese</a>
+            <a href="#mob-cap-03"><span class="num-cap">03</span> Carattere e font</a>
+            <a href="#mob-cap-04"><span class="num-cap">04</span> Gestire un testo</a>
+            <a href="#mob-cap-05"><span class="num-cap">05</span> Il colore</a>
+            <a href="#mob-cap-06"><span class="num-cap">06</span> La stampa</a>
+        </div>
+    </div>
+</section>
+
+<!-- GIF -->
+<section>
+    <div class="container">
+
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="row">
+            <div class="col-md-3 col-2"></div>
+            <div class="col-md-6 col-8">
+                <img id="my-logo" src="img/RGB.gif">
+            </div>
+            <div class="col-md-3 col-2"></div>
+        </div>
+        <div class="space"></div>
+    </div>
+</section>
+
+<div class="space-2"></div>
+<!-- Chi siamo -->
+<div class="space"></div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p id="chi" class="titolo-capitolo-blu-regular titles-pt">CHI</p>
+                <p id="siamo" class="titolo-capitolo-blu titles-pt">SIAMO</p>
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="row mob-hidden">
+                    <div class="col-md-8 col-12">
+                        <h4>COSA</h4>
+                        <h1>IMPARERAI</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="testo-italic"><br/>
+                    <p>In design,</p>
+                    <p>thinking</p>
+                    <p>wrong</p>
+                    <p>is <span class="testo-italic-lilla">right</span>.</p>
+                </div>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>Siamo due studentesse dell'Accademia di Belle arti, appassionate di design.
+                        Il nostro sito web, messo a disposizione per tutti, spiega i fondamenti della grafica
+                        editoriale e web. Troverai piccole nozioni su tutti gli argomenti, con esempi.</p>
+                </div>
+                <div>
+                    <img style="height:90px" src="img/puntini_verdi.png">
+                </div>
+            </div>
+
+            <div class="col-md-2"></div>
+
+            <!-- Rettangolo lilla -->
+
+            <div class="col-md-6 rettangolo pt-4 pr-3 mob-margin-3">
+                <div class="row">
+                    <div class="col-md-1 pl-2" style="color:#ffffff">
+                        <h1 class="luminosità">01</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="mob-size">COSTRUZIONE di un LAYOUT</h4>
+                        <p class="testo-bianco">É il processo di combinazioni di parti o elementi diversi per formare
+                            una struttura unitaria.</p>
+                    </div>
+                    <div class="col-md-1 pl-2" style="color:#ffffff">
+                        <h1 class="luminosità">02</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="mob-size">ALDO NOVARESE</h4>
+                        <p class="testo-bianco">Imparare a conoscere la struttura delle lettere è fondamentale per capire
+                            le differenze e i tratti comuni dei caratteri tipografici.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1 pl-2" style="color:#ffffff">
+                        <h1 class="luminosità">03</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="mob-size">DIFFERENZA tra CARATTERE e FONT</h4>
+                        <p class="testo-bianco">Il contenuto e lo scopo della grafica costituiscono i fattori che
+                            influenzano maggiormente la scelta della font.</p>
+                    </div>
+                    <div class="col-md-1 pl-2" style="color:#ffffff">
+                        <h1 class="luminosità">04</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="mob-size">GESTIRE un TESTO</h4>
+                        <p class="testo-bianco">La disposizione delle parti su una pagina stampata/web deve tener conto di spaziatura,
+                            organizzazione visiva, stile, dimensione e formato del lavoro finito.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1 pl-2" style="color:#ffffff">
+                        <h1 class="luminosità">05</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="mob-size">il COLORE</h4>
+                        <p class="testo-bianco">Capire l'importanza dell'uso del colore nella comunicazione visiva e dell'influenza
+                            che questo esercita nella sfera psicologica. Differenza tra i colori RGB (web) e CMYK(stampa).</p>
+                    </div>
+                    <div class="col-md-1 pl-2" style="color:#ffffff">
+                        <h1 class="luminosità">06</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="mob-size">Le TECNICHE di STAMPA</h4>
+                        <p class="testo-bianco">Le diverse tecniche di stampa utilizzate nel corso degli anni partendo
+                            dalla stampa Offset
+                            fino ad arrivare alla stampa digitale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="space-2 mob-space"></div>
+<!-- 01 - Costruzione di un layout -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 numero-cap ">
+                <p class="mob-cap"><a id="1">01</a></p>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3><a id="mob-cap-01">COSTRUZIONE</a></h3>
+                <h3 class="mob-size-2" >di un <span id="cap-layout" class="titolo-capitolo-blu titles-em">LAYOUT</span></h3>
+                <h2 class="mob-size-2" >Margini</h2>
+                <h3 class="mob-size-2">e <span class=" testo-italic-lilla">colonne</span>.</h3>  <br/>
+                <p class="paragrafi mob-pad-right-2">Per i lavori da stampare, per prima cosa si deve realizzare la composizione della
+                    doppia pagina,
+                    da estendere poi al resto del lavoro. Questo è importante per visualizzare il rapporto tra
+                    <span class="parole-arancioni">VERSO</span> (pagina di sinistra) e <span class="parole-arancioni">RECTO</span>
+                    (pagina di destra) per valutarne l'effetto complessivo.
+                </p>
+            </div>
+
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="rettangolo pl-3 pr-3 mob-margin-3">
+                    <h1 class="luminosità mob-cose-da-ricordare">COSE da RICORDARE</h1>
+                    <p class="testo-bianco">Nello stabilire i margini di una pagina, bisogna considerare il tipo di
+                        pubblicazione:
+                        nelle brossure i margini tendono a essere ridotti per mantenere basso i numeri
+                        delle pagine e contenere i costi, mentre le pubblicazioni ricche d'immagini hanno spesso
+                        margini e spazi bianchi più ampi. In questo caso a pesare maggiormente sono le considerazioni
+                        economiche: brochure proporzionali e strumenti di vendita in genere hanno budget più ampi
+                        rispetto a pubblicazioni scientifiche o di narrativa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space-2"></div>
+
+<!-- Tipi di Margini  -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="mob-size-2" style="color:#27187e"><a id="1.1">TIPI di</a></h3>
+                <p id="mob-lilla-margini" class="titolo-capitolo-lilla">MARGINI</p>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div  id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner ombra border-radius-2">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_1_margini.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_margini_1.png" alt="First slide"/>
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_2_margini.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_margini_2.png" alt="Second slide"/>
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_3_margini.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_margini_3.png" alt="Third slide"/>
+                        </picture>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2 mob-hidden">
+                <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="mob-space"></div>
+<!-- Tipi di Colonne  -->
+<section>
+    <div class="container mob-mar-top-2">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 style="color:#27187e">TIPI di</h3>
+                <p id="mob-lilla-colonne" class="titolo-capitolo-lilla subtitles-em">COLONNE</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner ombra border-radius-2">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_1_colonne.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_colonne_1.png" alt="First slide"/>
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_2_colonne.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_colonne_2.png" alt="Second slide"/>
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_3_colonne.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_colonne_3.png" alt="Third slide"/>
+                        </picture>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space-2"></div>
+
+<!-- Le griglie-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h3><a id="1.2" class="mob-size-2">Le</a></h3>
+            </div>
+        </div>
+
+         <div class="row">
+             <div class="col-md-4">
+                 <h3 id="cap-griglie" class="titolo-capitolo-blu titles-em lilla">GRIGLIE</h3> <br/>
+                 <h3 class="mob-size-2">Griglie</h3>
+                 <h3 class="mob-size-2">colonne e </h3>
+                 <h2 class="mob-size-2 testo-italic-lilla">margini<span class="paragrafi">.</span></h2>
+                 <p class="paragrafi mob-pad-right-2">L’organizzazione di una pagina prevede lo sviluppo di una griglia (o
+                     gabbia) all’interno della quale posizioneremo gli elementi. La griglia consente la creazione
+                     di colonne, margini, aree per il testo e per le immagini. Una griglia ben progettata consente
+                     un certo grado di flessibilità al <span class="parole-arancioni">layout</span> delle singole pagine,
+                     ma allo stesso tempo funziona come linea guida che conferisce coerenza visiva all’interno
+                     del lavoro questo è fondamentale in ogni tipo di progetto editoriale, ma vale anche per i siti web.
+                 </p>
+             </div>
+
+             <div class="col-md-4 "></div>
+
+             <div class="col-md-4">
+                 <div class="row">
+                     <div class="col-md-7"></div>
+                     <div class="col-md-2">
+                         <img class="puntini" style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+                     </div>
+                 </div>
+
+                 <div class="rettangolo pl-3 pr-2 mob-margin-1">
+                     <h1 class="mob-cose-da-ricordare luminosità">COSE da RICORDARE</h1>
+                     <p class="testo-bianco">Organizzare le informazioni in una pagina è fondamentale per
+                         veicolare i messaggi, soprattutto quando si maneggiano grandi quantità di testo.
+                         <br/><br/> Ci sono molti modi per dividere la pagina e la scelta dovrebbe dipendere
+                         dal tipo di lavoro e dalla quantità d'informazioni da presentare in ogni pagina o sub-divisione.
+                     </p>
+                 </div>
+
+
+                 <br/><br/>
+                 <div class="paragrafi mob-pad-right-2 mob-space-neg-2">
+                     <p>Sovrapponendo la suddivisione in colonne verticali con righe orizzontali si ottiene la
+                         <span class="parole-verdi">GRIGLIA DI IMPAGINAZIONE</span>, per collocare in modo
+                         geometrico e armonico gli elementi grafici (testo, immagini, grafici).
+                     </p>
+                 </div>
+             </div>
+         </div>
+    </div>
+</section>
+
+<div class="space mob-space"></div>
+<!-- Esempi di griglie  -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="mob-size-2" style="color:#27187e">ESEMPI di</h3>
+                <p id="mob-lilla-esempi" class="titolo-capitolo-lilla subtitles-em">GRIGLIE</p>
+            </div>
+        </div>
+        <br/>
+        <div class="col-md-12">
+            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner ombra border-radius-2">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_1_griglie.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_griglie_1.png" alt="First slide"/>
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_2_griglie.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_griglie_2.png" alt="First slide"/>
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source
+                                    srcset="img/slider/slider_3_griglie.png"
+                                    media="(min-width: 800px)">
+                            <img class="d-block w-100" src="img/slider/mob_griglie_3.png" alt="First slide"/>
+                        </picture>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space-2"></div>
+
+<!-- Posizionare gli elementi nella griglia-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mob-size-2">POSIZIONARE GLI</h3>
+                <h3 id="elementi-griglia" class="titolo-capitolo-blu titles-em">ELEMENTI</h3>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-2 mob-hidden">
+                <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mob-size-2">nella <span id="elementi-griglia2" class="titolo-capitolo-blu titles-em"> GRIGLIA</span></h3> <br/>
+                <h3>Il <span class="testo-italic-lilla">layout</span>.</h3>
+                <br/>
+                <p class="paragrafi mob-pad-right-2">
+                    Il layout serve per dare una <span class="parole-arancioni">gerarchia</span>
+                    alle informazioni.
+                    Si tratta della disposizione degli elementi grafici in relazione allo spazio che occupano
+                    all’interno di un progetto complessivo. Lo scopo del layout è offrire una presentazione degli
+                    elementi grafici e testuali che ne consenta la <span class="parole-verdi">comprensione</span> con il
+                    minor sforzo possibile.
+                    Esistono due categorie principali di layout: <span class="parole-arancioni">SIMMETRICO</span> e
+                    <span class="parole-verdi">ASIMMETRICO</span>. Il layout simmetrico segue uno stile più tradizionale
+                    in cui il progetto si sviluppa intorno a un asse centrale.
+                </p>
+            </div>
+
+            <div class="col-md-4 "></div>
+
+            <div class="col-md-4">
+                <div class="rettangolo pl-3 pr-2 mob-margin-1">
+                    <h1 class="mob-cose-da-ricordare luminosità">COSE da RICORDARE</h1>
+                    <p class="testo-bianco">Un buon layout aiuta gli utenti che atterrano sul tuo sito, perché rende le
+                        informazioni importanti facilmente accessibili e intuitive da trovare. Di contro, un layout
+                        errato
+                        si trasforma in un’esperienza frustrante per gli utenti.</p>
+                </div>
+                <br/><br/>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>Questa tipologia ha origine nei primi libri stampati e deriva dal layout dei manoscritti
+                        medievali.
+                        Il layout asimmetrico non è centrato, è dinamico e legato al modernismo del XX secolo e legato
+                        al design del contemporaneo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space-2 mob-space"></div>
+<!-- 02 - ALDO NOVARESE -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 numero-cap">
+                <p class="mob-cap"> <a id="2">02</a></p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mob-size-2"><a id="mob-cap-02">ALDO</a></h3>
+                <div id="cap-novarese" class="titolo-capitolo-blu titles-em"><p>NOVARESE</p></div>
+                <br/>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>Aldo Novarese è stato sicuramente il <span class="parole-arancioni">disegnatori</span>
+                        di caratteri più prolifico che l’Italia abbia visto nel secolo scorso.<br/><br/> Durante
+                        la sua carriera durata oltre 50 anni ha disegnato più di 70 caratteri, che hanno contribuito
+                        allo stile del panorama visivo internazionale tra gli anni ’50 e ’90. Novarese è stato poco
+                        utilizzato dai grafici professionisti, dalle agenzie e dagli studi tipografici, ma è radicato
+                        profondamente nella società e nella vita quotidiana degli italiani.</p>
+                </div>
+                <img class="mob-hidden" style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+            </div>
+
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <picture>
+                    <source srcset="img/aldo.png"
+                            media="(min-width: 800px)">
+                    <img class="border-radius-2 d-block w-100" src="img/mob-aldo.png"/>
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space-2 mob-space-2"></div>
+
+<!-- La classificazione dei caratteri -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h3 class="mob-size-2"><a id="2.1">La CLASSIFICAZIONE</a></h3>
+                <h3 class="mob-size-2">dei <span id="classificazione" class="titolo-capitolo-blu titles-em">CARATTERI</span></h3>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 go-bottom">
+                        <h5 class="mob-hidden">Passa il <span style="color:#ff8600">mouse</span> sui caratteri:</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi mob-space-neg">
+                    <p>Nel 1957 Aldo Novarese si dedicò a una sua classificazione dei caratteri tipografici
+                        basata sugli stili, ispirata a quella di Maximilien Vox del 1955.<span class="nascondi inline-block" id="caratteri-aldo">Attraverso questa classificazione, è possibile riconoscere i caratteri
+                        suddividendoli in <span class="parole-arancioni">dieci</span> famiglie, secondo la
+                        caratterizzazione storica, estetica e stilistica</span>
+                    <p>
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-1 mr-4" title="LAPIDARI:nascono nella Roma antica, venivano usati per le epigrafi e per le iscrizioni sui monumenti. Hanno grazie triangolari che formano un angolo acuto con la linea di base. Tali grazie erano “causate” da un colpo di scalpello, poiché gli scalpellini romani avevano necessità di creare lettere con terminazione ad angolo retto. Esempi: Trajan, Augustea, Nova-Augustea.">
+                <img class="class-caratteri lettere" src="img/caratteri/lapidari.png">
+                <div>
+                    <p class="nascondi paragrafi mob-margin-1 inline-block" id="mostra-caratteri"><span class="parole-lilla">LAPIDARI</span><br/>Nascono nella Roma antica,
+                        venivano usati per le epigrafi e per le iscrizioni sui monumenti. Hanno grazie triangolari che formano un
+                        angolo acuto con la linea di base. Tali grazie erano “causate” da un colpo di scalpello, poiché gli scalpellini
+                        romani avevano necessità di creare lettere con terminazione ad angolo retto. Esempi: Trajan, Augustea, Nova-Augustea.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1 mr-4 " title="MEDIEVALI:chiamati anche “Gotici”, derivano dalle scritture del Medioevo, e di conseguenza, molto diffusi in quel periodo. Inoltre furono i caratteri tipici del periodo di Gutenberg. Si riconoscono per la particolare forma contrastata e aguzza, che imita la scrittura con la penna d’oca. A causa della loro forma, la lettura risulta alquanto difficile. Esempi: Textura, Schwabacher, Rotunda, Fraktur.">
+                <img class="class-caratteri lettere" src="img/caratteri/medievali.png">
+                <div>
+                    <p class="nascondi paragrafi mob-margin-1 inline-block" id="mostra-caratteri2"><span class="parole-lilla">MEDIEVALI</span><br/>Chiamati anche “Gotici”, derivano
+                        dalle scritture del Medioevo, e di conseguenza, molto diffusi in quel periodo. Inoltre furono i caratteri tipici
+                        del periodo di Gutenberg. Si riconoscono per la particolare forma contrastata e aguzza, che imita la scrittura
+                        con la penna d’oca. A causa della loro forma, la lettura risulta alquanto difficile. Esempi: Textura, Schwabacher,
+                        Rotunda, Fraktur.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1 mr-4" title="VENEZIANI:anche questi derivano dai caratteri romani antichi, ma si differenziano per l’estremità arrotondata delle grazie e le linee più contrastate. Si diffusero intorno alla seconda metà del ‘400 a Venezia, patria dei primi stampatori italiani. Esempi: Garamond, Jenson, Garaldus, Minion.">
+                <img class="class-caratteri lettere" src="img/caratteri/veneziani.png">
+                <div>
+                    <p class="nascondi paragrafi mob-margin-1 inline-block" id="mostra-caratteri3"><span class="parole-lilla">VENEZIANI</span><br/>anche questi derivano dai caratteri
+                        romani antichi, ma si differenziano per l’estremità arrotondata delle grazie e le linee più contrastate.
+                        Si diffusero intorno alla seconda metà del ‘400 a Venezia, patria dei primi stampatori italiani.
+                        Esempi: Garamond, Jenson, Garaldus, Minion.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1 mr-4" title="TRANSIZIONALI:chiamati così perché indicano la transizione tra il Romano Antico e il Romano Moderno, e nascono intorno al ‘700. Le aste non hanno quasi mai inclinazione, e siccome la stampa si faceva più precisa, il contrasto tra le aste è molto netto. Esempi: Baskerville, Times, Magister.">
+                <img class="class-caratteri lettere" src="img/caratteri/transizionali.png">
+                <div>
+                    <p class=" nascondi paragrafi mob-margin-1 inline-block" id="mostra-caratteri4"><span class="parole-lilla">TRANSIZIONALI</span><br/>Chiamati così perché indicano la transizione
+                        tra il Romano Antico e il Romano Moderno, e nascono intorno al ‘700. Le aste non hanno quasi mai inclinazione,
+                        e siccome la stampa si faceva più precisa, il contrasto tra le aste è molto netto. Esempi: Baskerville, Times, Magister.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1" title="BODONIANI:sono caratteri con grazie ad angolo retto, che hanno le aste estremamente contrastate. Esempi: Bodoni, Didot, Fenice.">
+                <img class="class-caratteri lettere" src="img/caratteri/bodoniani.png">
+                <div>
+                    <p class="nascondi paragrafi mob-margin-1 inline-block" id="mostra-caratteri5"><span class="parole-lilla">BODONIANI</span><br/>Sono caratteri con grazie ad angolo retto,
+                        che hanno le aste estremamente contrastate. Esempi: Bodoni, Didot, Fenice.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi mob-hidden">
+                    <p>Attraverso questa classificazione, è possibile riconoscere i caratteri
+                        suddividendoli in <span class="parole-arancioni">dieci</span> famiglie, secondo la
+                        caratterizzazione storica, estetica e stilistica
+                    </p>
+                </div>
+            </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-1 mr-4 mob-margin-1" title="EGIZI:Sono riconoscibili per le grazie ad angolo retto. Esempi: Rockwell, Egizio, Landi Echo.">
+                    <img class="class-caratteri lettere" src="img/caratteri/egiziani.png">
+                    <div>
+                        <p class="nascondi paragrafi inline-block" id="mostra-caratteri6"><span class="parole-lilla">EGIZI</span><br/>Sono riconoscibili per le grazie ad angolo retto.
+                            Esempi: Rockwell, Egizio, Landi Echo.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1 mr-4 mob-margin-1" title="LINEARI:sono i caratteri più moderni, privi di grazie e presentano aste uniformi, ( oggi chiamati li chiamiamo “sans serif”) . Esempi: Helvetica, Arial, Recta, Microgramma, Forma.">
+                    <img class="class-caratteri lettere" src="img/caratteri/lineari.png">
+                    <div>
+                        <p class="nascondi paragrafi inline-block" id="mostra-caratteri7"><span class="parole-lilla">LINEARI</span><br/>Sono i caratteri più moderni, privi di grazie
+                            e presentano aste uniformi(oggi chiamati li chiamiamo “sans serif”). Esempi: Helvetica, Arial, Recta, Microgramma, Forma.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1 mr-4 mob-margin-1" title="SCRITTI:sono detti anche calligrafici, poiché imitano la scrittura a mano. Si suddividono in calligrafici legati o non legati. Di questa categoria fanno parte caratteri di diverse epoche. Esempi: Inglese, Juliet, Slogan.">
+                    <img class="class-caratteri lettere" src="img/caratteri/scritti.png">
+                    <div>
+                        <p class="nascondi paragrafi inline-block" id="mostra-caratteri8"><span class="parole-lilla">SCRITTI</span><br/>Sono detti anche calligrafici, poiché imitano
+                            la scrittura a mano. Si suddividono in calligrafici legati o non legati. Di questa categoria fanno parte caratteri
+                            di diverse epoche. Esempi: Inglese, Juliet, Slogan.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1 mr-4 mob-margin-1" title="ORNATI:presentano decorazioni molto evidenti, e per questo generalmente vengono usati come capilettera. Esempi: Romantiques, Carrick.">
+                    <img class="class-caratteri lettere" src="img/caratteri/ornati.png">
+                    <div>
+                        <p class="nascondi paragrafi inline-block" id="mostra-caratteri9"><span class="parole-lilla">ORNATI</span><br/>Presentano decorazioni molto evidenti,
+                            e per questo generalmente vengono usati come capilettera. Esempi: Romantiques, Carrick.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1 mob-margin-1" title="FANTASIA:comprendente caratteri con caratteristiche non classificabili nelle precedenti categorie. Esempio: Ritmo, Estro, Stop.">
+                    <img class="class-caratteri lettere" src="img/caratteri/fantasia.png">
+                    <div>
+                        <p class="nascondi paragrafi inline-block" id="mostra-caratteri10"><span class="parole-lilla">FANTASIA</span><br/>comprendente caratteri con caratteristiche non
+                            classificabili nelle precedenti categorie. Esempio: Ritmo, Estro, Stop.
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<div class="space-2 mob-space-2"></div>
+
+<!-- L'anatomia del CARATTERE -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><a id="2.2">L'</a><span id="anatomia2" class="titolo-capitolo-blu titles-em">ANATOMIA</span></h3>
+                <h3>del <span id="mob-lilla-anatomia" class="titolo-capitolo-lilla subtitles-em">CARATTERE</span></h3>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-12">
+                <img class="img-responsive" id="abcdef" src="img/abcdefg.png">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <!-- Ascendenti, Altezza della X -->
+            <div class="col-md-4">
+                <div class="rettangolo pr-2 mob-margin-1">
+                    <h4 class="luminosità">ASCENDENTI</h4>
+                    <p class="testo-bianco">In tipografia, un tratto ascendente è la parte di una lettera dell’alfabeto
+                        che si estende
+                        al di sopra della linea mediana di una font È, in altre parole, la parte del carattere che ha
+                        un’altezza maggiore dell’altezza della x (in inglese x-height).</p>
+                </div>
+
+                <div class="row">
+                    <div class="vuoto"></div>
+                </div>
+
+                <div class="rettangolo pr-2 mob-margin-1">
+                    <h4 class="luminosità">ALTEZZA DELLA X</h4>
+                    <p class="testo-bianco">o CORPO cambia a seconda del disegno del carattere.</p>
+                </div>
+            </div>
+
+            <!-- Discendenti, Linea di base -->
+            <div class="col-md-4">
+                <div class="rettangolo pr-2 mob-margin-1">
+                    <h4 class="luminosità">DISCENDENTI</h4>
+                    <p class="testo-bianco">Con tratto discendente si intende la porzione di una lettera che
+                        si estende al di sotto della linea di base (in inglese baseline).</p>
+                </div>
+
+                <div class="row">
+                    <div class="vuoto"></div>
+                </div>
+
+                <div class="rettangolo pr-2 mob-margin-1">
+                    <h4 class="luminosità">LINEA di BASE</h4>
+                    <p class="testo-bianco">La linea di base, si estende sotto le lettere come un appoggio;
+                        nella vita quotidiana corrisponde alle righe dei quaderni.</p>
+                </div>
+            </div>
+
+            <!-- Corpo, Occhio -->
+            <div class="col-md-4">
+                <div class="rettangolo pr-2 mob-margin-1">
+                    <h4 class="luminosità">CORPO</h4>
+                    <p class="testo-bianco">È la sua altezza, si misura in punti tipografici (1 pt è uguale a 0,35
+                        mm).</p>
+                </div>
+
+                <div class="row">
+                    <div class="vuoto"></div>
+                </div>
+
+                <div class="rettangolo pr-2 mob-margin-1">
+                    <h4 class="luminosità">OCCHIO</h4>
+                    <p class="testo-bianco">L’occhio medio del carattere, o altezza della X, cambia a seconda
+                        del disegno del carattere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space-2 mob-space"></div>
+
+<!-- anatomia parte 1-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="parole-lilla">
+                    APICE
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        È l’intersezione superiore dove congiungono due tratti.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    ORECCHIO
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        È una piccola sporgenza che troviamo nella lettera g. A volte,
+                        a seconda del carattere, è possibile trovarla anche nella lettera o.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    ASTA OBLIQUA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Sono quelle che troviamo nelle lettere (N), (X), (Z), (x) e (z).
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    GRAZIA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        È una proiezione che si estende oltre i tratti principali dei caratteri Serif.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    BARRA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Sono quelle che uniscono direttamente fra loro le aste verticali o le montanti.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    CAPPIO
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Occhiello inferiore della g.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <img id="anatomia-parte-uno" src="img/anatomia_parte_uno.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<div class="space mob-space-3"></div>
+<!-- anatomia parte due -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <img  id="anatomia-parte-due" src="img/anatomia_parte_due.png">
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-3">
+                <div class="parole-lilla">
+                        VERTICE
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Punto d'intersezione più basso della lettera.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                        OCCHIELLO
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Spazio chiuso nella parte superiore della lettera.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                      PANCIA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                       è la convessità che si forma in certe lettere.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    SPERONE
+                </div>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>
+                        Breve proiezione appuntita di un'asta o di un tratto di un carattere serif.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    ASTA VERTICALE
+                </div>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>
+                        Sono così chiamate propriamente solo quelle delle lettere maiuscole.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    BRACCIO
+                </div>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>
+                        Tratto ascendente, orizzontale o diagonale, collegato alla lettera di un'estremità e libero dall'altra.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    CASSA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Ampio spazio all'interno di una lettera.
+                    </p>
+                </div>
+                <div class="parole-lilla ">
+                        CODA O GAMBA
+                </div>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>
+                        Prolungamento che di estende da una lettera verso il basso, normalmente sotto la linea di base.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space"></div>
+<!-- 03 - Differenza tra carattere tipografico e font-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 numero-cap">
+                <p class="mob-cap"><a id="3">03</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mob-size-2"><a id="mob-cap-03">DIFFERENZA tra</a></h3>
+                <p id="carattere" class="titolo-capitolo-blu titles-em lilla">CARATTERE</p>
+                <h3 class="mob-size-3" >TIPOGRAFICO e </h3>
+                <p id="font2" style="color:#27187e" class="titolo-capitolo-blu">FONT</p>
+            </div>
+
+            <div class="col-md-4"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>
+                    Cos'è il carattere
+                </h4>
+                <h4>
+                    <span class="testo-italic-lilla">tipografico</span>?
+                </h4>
+                <p class="paragrafi mob-pad-right-2">Il carattere è la singola lettera, numero, segno d'interpunzione o glifo.
+                    Il carattere tipografico è l’insieme dei caratteri accomunati da un certo stile grafico
+                    (Regular, Italic, Bold, Bold Italic, Condenced).
+                </p>
+            </div>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4 ">
+                <div class="rettangolo pt-3 pr-3 mob-margin-1">
+                    <h1 class="luminosità mob-cose-da-ricordare">
+                        COSE da RICORDARE
+                    </h1>
+                    <p class="testo-bianco">
+                        Molti pensano che font sia un termine di origine inglese ma, in realtà la sua origine è francese.
+                        È infatti la trasposizione inglese del termine “fonte”, del francese medievale.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 class="mob-mar-top-2">Cos'è una <span class="testo-italic-lilla">font?</span></h4>
+                        <p class="paragrafi mob-pad-right-2">Una font è un FILE che contiene un carattere tipografico con una precisa
+                            forma e dimensione (es. Garamound Roman 12 pt).
+                        </p>
+                    </div>
+
+                    <div class="col-md-6"></div>
+                    <div class="col-md-2">
+                        <img class="mob-hidden" style="weight:100px;height:100px" src="img/puntini_arancioni.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space"></div>
+
+<!-- differenza carattere tipografico e font-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi mob-space-neg mob-pad-right-2">
+                    I file dei font sono raggruppati in delle <span class="parole-arancioni">famiglie di font</span>,
+                    dove ci sono delle varianti del carattere tipografico originario che sono:
+                    <ul class="paragrafi">
+                        <br/>
+                        <li>Le versioni “normali”, generalmente chiamate <span class="parole-verdi">Roman</span> o Regular;
+                        </li>
+                        <br/>
+                        <li>Tutte le varianti di peso (cioè lo spessore del carattere) che possono andare da quelle
+                        più sottili (Light, Thin, Extra-Light, ecc) a quelle più spesse (Bold, Black, Extra-Bold, Ultra,
+                        ecc);
+                        </li>
+                    <br/>
+                        <li>Il corsivo, o <span class="parole-arancioni">Italic</span>, che è proprio un font diverso,
+                        progettato con scelte ottiche ed estetiche
+                        diverse (non è semplicemente un font Regular inclinato). Anche i font corsivi hanno le
+                        loro varianti di peso (Bold Italic, Light Italic, ecc).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+            <div class="col-md-4 ">
+                <div class="row">
+                    <img id="afgx" class="mob-mar-left-2" style="height: 160" src="img/afgx.png">
+                </div>
+
+                <div class="row">
+                    <ul class="paragrafi mob-pad-right-2">
+                        <li>
+                            L’<span class="parole-arancioni">obliquo</span>, o oblique, è invece la variante inclinata,
+                            senza alcuna modifica estetica e funzionale, del font normale.
+                            Per farti capire meglio la differenza con gli italic.
+                        </li>
+                            <br/>
+                        <li>
+                            Le versioni compresse (Condensed) e allargate (Extended). Anche qui, non si tratta di un
+                            semplice font normale “stretchato”
+                            ma proprio di un diverso font, progettato perché sia più largo o più stretto.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space"></div>
+
+<!-- Scegliere una font-->
+<section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mob-size-2"><a id="3.1">SCEGLIERE una</a></h3>
+                <p id="mob-lilla-font" class="titolo-capitolo-lilla subtitles-em">FONT</p>
+            </div>
+
+            <div class="col-md-6"></div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p class="paragrafi mob-pad-right-2">Esistono diverse categorie di caratteri tipografici, tra le più comuni ci sono i
+                    <span class="parole-arancioni">serif</span>
+                    (graziati) e i <span class="parole-arancioni">sans serif</span> (bastoni). <br/><br/>Il contenuto e
+                    lo scopo di un lavoro di grafica
+                    costituiscono i fattori che influenzano maggiormente la scelta del font da utilizzare. Prima d'iniziare
+                    un progetto poniti questasemplice domanda: A quale target è rivolto il mio messaggio? La font è capace di <span
+                            class="parole-arancioni">influenzare</span> lo
+                    stato d'animo del progetto.<br/><br/> Una ludoteca non avrà mai un carattere spigoloso e serio,
+                    mentre il biglietto da visita di
+                    un avvocato non avrà mai un carattere giocoso e morbido.
+                </p>
+            </div>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+                <div class="rettangolo pt-3 pr-4 mob-margin-1">
+                    <h1 class="luminosità mob-cose-da-ricordare">
+                        COSE da RICORDARE
+                    </h1>
+                    <p class="testo-bianco">
+                        Un altro punto importante riguarda la leggibilità di un carattere (LEGIBILITY). Per ogni tipo di
+                        progetto occorre scegliere
+                        font chiari che si possano distinguere con facilità.<br/><br/> Si tratta di una caratteristica
+                        oggettiva non legata ai gusti personali
+                        di una persona in quanto una buona scelta del font è in grado di supportare il messaggio da
+                        veicolare.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space "></div>
+
+<br/>
+<!-- 04 - Gestire un testo-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 numero-cap">
+                <p class="mob-cap"><a id="4">04</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mob-size-2"><a id="mob-cap-04">GESTIRE</a></h3>
+                <h3 class="mob-size-2">un<span id="testo2" class="titolo-capitolo-blu">TESTO</span></h3>
+            </div>
+        </div>
+
+        <br/>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="paragrafi mob-pad-right-2">
+                    Oltre alla leggibilità di un carattere bisogna tener conto anche della leggibilità di un testo
+                    <span class="parole-arancioni">(READABILITY)</span> che prende in considerazione: le caratteristiche
+                    di forma, traking, kerning, colore, ecc..., che formeranno l'aspetto complessivo del testo.
+                </p>
+                <p class="paragrafi">
+                    Bisogna tener conto di vari fattori:
+                </p>
+
+                <ul class="parole-arancioni">
+                    <li>INTERLINEA;</li>
+                    <li>LUNGHEZZA O GIUSTEZZA;</li>
+                    <li>ALLINEAMENTO;</li>
+                    <li>SPAZIATURA</li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+                <div class="rettangolo pr-4 mob-margin-1">
+                    <h1 class="luminosità mob-cose-da-ricordare">
+                        COSE da RICORDARE
+                    </h1>
+                    <p class="testo-bianco">
+                        Leggibilità del carattere e leggibilità del testo sono gli aspetti oggettivi e quantificabili
+                        nel processo di scelta del carattere ma ci sono sicuramente degli aspetti che invece riguardano
+                        l’adeguatezza,
+                        ossia il saper scegliere il font giusto nel contesto giusto.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img style="height:80px" src="img/puntini_verdi.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space"></div>
+
+<!-- interlinea-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p id="interlinea" class="titolo-capitolo-blu"> <a id="4.1">
+                        INTERLINEA</a>
+                    </p>
+                    <br>
+                    <p class="paragrafi mob-pad-right-2">
+                        L'interlinea è la distanza che intercorre tra una linea di composizione del testo e la successiva.<br/>
+                        È sempre rapportata al corpo del testo ed entrambi si misurano in punti tipografici,
+                        <span class="parole-arancioni">pt </span> <br/>(1pt = 0,352 mm).
+                    </p>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-4">
+                    <div class="rettangolo pr-4 pt-4 mb-3 mob-margin-1">
+                        <p class="testo-bianco">
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
+                            ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+                        <p class="interlinea">
+                            8/10 pt
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="paragrafi mob-pad-right-2">
+                            L’interlinea automatica dei software è impostata sul 120% del corpo del carattere, ma
+                            ascendenti, discendenti e l’altezza delle “x”
+                            influiscono su questa percentuale che non può essere considerata identica per tutti i caratteri.
+                            Per questo motivo si può
+                            aumentare o diminuire per migliorare la <span class="parole-arancioni">leggibilità</span> di un
+                            testo in relazione
+                            al tipo di carattere che viene utilizzato. Facendo partica sarà sempre più facile capire se
+                            l'interlinea applicata è giusta o meno.
+                    </p>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-4">
+                    <div class="rettangolo pr-4 pt-4 mb-3 mob-margin-1">
+                        <p class="testo-bianco" style="line-height:18pt">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
+                                ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+
+                        </p>
+                        <p class="interlinea">
+                                8/12 pt
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="paragrafi mob-pad-right-2">
+                                Un testo breve come in titolo può avere un'interlinea negativa, cioè inferiore al corpo del
+                                testo, a condizione che ascendenti
+                                e discendenti non si tocchino tra loro.
+                    </p>
+                    <img class="mob-hidden" style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-4">
+                    <div class="rettangolo pr-4 pt-4 pb-1 mob-margin-1">
+                        <p class="testo-bianco" style="line-height:20pt">
+                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
+                                    ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+                        <p class="interlinea">
+                                    8/15 pt
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="space-2 mob-space-2"></div>
+<!-- Lunghezza o giustezza-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p id="mob-lilla-lunghezza" class="titolo-capitolo-lilla"><a id="4.2">
+                        LUNGHEZZA</a>
+                    </p>
+                    <h3 class="mob-size-2">
+                        o GIUSTEZZA
+                    </h3>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-2">
+                    <img class="mob-hidden" style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="paragrafi mob-pad-right-2">
+                            La giustezza della riga deve permettere una lettura facile e veloce; righe troppo lunghe
+                            rendono difficile la lettura e ritrovare l'accapo successivo. Il numero ideale di caratteri
+                            per riga varia da <span class="parole-arancioni">60</span> a <span
+                                class="parole-arancioni">72</span>.<br/><br/>
+                            La giustezza dipende da vari fattori:
+                    </p>
+                        <ul class="paragrafi">
+                            <li>La gabbia d'impaginazione;</li>
+                            <li>Il formato della pagina;</li>
+                            <li>Il numero di colonne;</li>
+                            <li>L'allineamento del testo;</li>
+                            <li>Corpo del testo;</li>
+                            <li>Interlinea del carattere;</li>
+                        </ul>
+
+                </div>
+
+                <div class="col-md-3"></div>
+
+                    <div class="col-md-5">
+                        <div class="rettangolo pr-4 pt-4 pb-1 mob-margin-1">
+                            <h1 class="luminosità mob-cose-da-ricordare">COSE da RICORDARE</h1>
+                            <h5 style="color:white">SILLABAZIONE</h5>
+                            <p class="testo-bianco mob-pad-right-2">Nello stabilire i margini di una pagina, bisogna considerare il tipo di
+                                pubblicazione:
+                                nelle brossure i margini tendono a essere ridotti per mantenere basso i numeri
+                                delle pagine e contenere i costi, mentre le pubblicazioni ricche d'immagini hanno spesso
+                                margini e spazi bianchi più ampi. In questo caso a pesare maggiormente sono le
+                                considerazioni
+                                economiche: brochure proporzionali e strumenti di vendita in genere hanno budget più ampi
+                                rispetto a pubblicazioni scientifiche o di narrativa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <br/>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rettangolo pr-4 pt-3 mob-margin-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="mob-giustificato img-giustificato" src="img/giustificato_senza_sillabazione.png">
+                            </div>
+
+                            <div class="col-md-4">
+                                <img class="mob-giustificato img-giustificato" src="img/giustificato_con_sillabazione.png">
+                            </div>
+
+                            <div class="col-md-4">
+                                <img class="mob-giustificato img-giustificato " src="img/non_giustificato.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="space-2 mob-space"></div>
+<!-- Allineamento-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 id="allineamento" class="titolo-capitolo-blu "><a id="4.3">
+                    ALLINEAMENTO</a>
+                </h3>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p class="paragrafi">
+                         Significa dare una direzione alla lettura e un ritmo al testo. <br/><br/>
+                         Le tipologie di allineamento sono:
+                </p>
+                        <ul class="parole-arancioni">
+                            <li>Bandiera a sinistra o a destra;</li>
+                            <li>A epigrafe o lapidario;</li>
+                            <li>Giustificato o a pacchetto;</li>
+                            <li>Sagomato;</li>
+                        </ul>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="rettangolo pt-4 pr-4 mob-rettangolo-allineamento mob-bottom-neg" style="text-align:right">
+                    <h5 style="color:white">BANDIERA a</h5>
+                    <h1 class="luminosità mob-cose-da-ricordare">DESTRA</h1>
+                    <p class="testo-bianco">I testi con la bandiera a destra possono essere usati per piccoli blocchi di testo,
+                        in copertine o manifesti, difficilmente vengono adottati per i testi lunghi. Anche questo non prevede
+                        la sillabazione.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="rettangolo pt-4 pr-4 mob-rettangolo-allineamento " style="text-align:center" >
+                    <h5 style="color:white">TESTO a</h5>
+                    <h1 class="luminosità mob-cose-da-ricordare ">EPIGRAFE</h1>
+                    <p class="testo-bianco">Normalmente viene usato per i testi brevi a cui dare più enfasi e
+                        anche esso non prevede la sillabazione. Collegando le estremità delle linee si deve
+                        ottenere una figura simmetrica, come una clessidra o un calice.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="rettangolo pt-4 pr-4 mob-rettangolo-allineamento mob-bottom-neg">
+                    <h5 style="color:white">BANDIERA a</h5>
+                    <h1 class="luminosità mob-cose-da-ricordare">SINISTRA</h1>
+                    <p class="testo-bianco">I testi con la bandiera a sinistra vengono utilizzati per composizioni
+                        dinamiche e possono essere usati per testi più lunghi come ad esempio i libri.
+                        Non prevedono sillabazione e non va usata una giustezza troppo lunga.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br/><br/>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="rettangolo pt-4 pr-4 mob-rettangolo-allineamento " style="text-align:justify">
+                    <h5 style="color:white">TESTO </h5>
+                    <h1 class="luminosità mob-cose-da-ricordare">GIUSTIFICATO</h1>
+                    <p class="testo-bianco ">Sono maggiormente usati per i testi lunghi, sono percepiti come blocchi di testo,
+                        molto statici e prevedono la sillabazione. Senza la sillabazione si creerebbero buchi tra le parole
+                        o una riduzione dello spazio tra loro. Per facilitare la lettura e dare ritmo si usano i RIENTRI,
+                        l'inizio del paragrafo sporge in dentro o in fuori rispetto alla giustezza.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-5">
+                <div class="rettangolo pt-4 pr-4 mob-rettangolo-allineamento">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 style="color:white">TESTO </h5>
+                            <h1 class="luminosità mob-cose-da-ricordare">SAGOMATO</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img id="sagomato" style="height:170px" src="img/sagomato.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space"></div>
+
+<!-- Gerarchia delle informazioni-->
+<section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 "><a id="4.4">
+                <h2 class="mob-size-2">GERARCHIA delle</h2> </a>
+                <p id="informazioni" class="titolo-capitolo-blu">INFORMAZIONI</p>
+            </div>
+
+            <div class="col-md-6"></div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p class="paragrafi mob-pad-right-2">Prima d'iniziare un progetto, è basilare capire e decidere la gerarchia delle informazioni:
+                    titoli, sottotitoli, testo introduttivo, didascalie, citazioni ecc.<br/>
+                    Qualsiasi soluzione di design può essere definita integrata quando tutte le sue componenti sono correlate in modo
+                    chiaro attraverso:
+                </p>
+                    <ul class="paragrafi mob-pad-right-2">
+                        <li> <span class="titoli-testi"> Formato</span>: le proporzioni devono evocare sentimenti appropriati al messaggio che si vuole trasmettere (intimità, allegria, aggressività).</li>
+                         <li> <span class="titoli-testi"> Organizzazione del contenuto</span>: deve essere coerente con il formato e con i requisiti delle informazioni da presentare.</li>
+                    </ul>
+            </div>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="rettangolo pr-2 mob-margin-1">
+                            <h1 class="luminosità mob-cose-da-ricordare">
+                                COSE da RICORDARE
+                            </h1>
+                            <p class="testo-bianco mob-pad-right-2">
+                                Questi livelli d'importanza sono detti gerarchie. Una volta definite, le gerarchie possono essere indicate in vari modi, soprattutto mediante spazio, peso e forma.
+                                Alcune efficaci tecniche per dare enfasi si basano sul >contrasto> che si ottiene dall'alternanza
+                                tra caratteri stretti e larghi, sull'uso del olore e sulla differenza dei pesi del carattere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7"></div>
+                    <div class="col-md-5">
+                        <img class="mob-hidden" style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space mob-space"></div>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi">
+                    <ul class="paragrafi mob-pad-right-2">
+                         <li> <span class="titoli-testi">Immagini e caratteri tipografici</span>: devono supportarsi reciprocamente rafforzando il concept, la loro disposizione deve essere coerente sul piano visivo e deve suscitare emozioni.</li>
+                         <li><span class="titoli-testi">Ritmo e sequenza dei contenuti</span>: devono corrispondere alla loro importanza gerarchica, creare alti e bassi visivi per tenere viva l’attenzione.</li>
+                         <li><span class="titoli-testi">Dettagli tipografici o astratti</span>: valutare il modo in cui si rapportano agli elementi compositivi di grande dimensione o alla loro interazione spaziale.</li>
+                         <li><span class="titoli-testi">Qualità fisica</span>: l’esperienza del progetto deve essere valutata in base al mezzo utilizzato cartaceo o elettronico.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <img id="gerarchia" class="gerarchia" src="img/gerarchia.png">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space"></div>
+
+<!-- Formattazione -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 titolo-capitolo-blu mob-space-neg-3" id="formattazione"><p><a id="4.5">
+                Format<span class="mob-hidden">-</span></a><span class="nascondi inline-block">tazione</span> </p></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-4 mob-hidden"><img style="height:80px" src="img/puntini_verdi.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7 mb-4">
+                <div class="no-padding mob-mar-top-2">
+                    <p class="titolo-capitolo-blu mob-hidden">tazione </p>
+                </div>
+                <div class="col-md-7 no-padding go-bottom">
+                    <div class="paragrafi mob-pad-right-2">
+                        <p> <span class="titoli-testi">KERNING (CRENATURA)</span> <br/>
+                            Regolazione dello spazio tra due lettere all’interno di una parola.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rettangolo lilla -->
+            <div class="col-md-4 rettangolo mob-margin-4" style="align:center">
+                <div class="row">
+                    <div class="col-md-12 mt-3" style="text-align:center">
+                        <h3 class="luminosità">
+                            LEGATURE
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mt-3 ml-5"><img style="height:100px" id="fi" src="img/legature.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fine rettangolo lilla -->
+        <div class="row">
+
+            <div class="col-md-4 go-top">
+                <div class="titoli-testi">
+                    <p>TRAKING</p>
+                </div>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>Gestione dello spazio "totale" tra tutte le lettere e le parole di una font.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="titoli-testi">
+                            <p> LEGATURE</p>
+                        </div>
+                        <div class="paragrafi mob-pad-right-2">
+                            <p>Duo o più lettere che si fondono per formare un solo carattere.</p>
+                        </div>
+                    </div>
+
+                     <div class="col-md-2"></div>
+                     <div class="col-md-6">
+                         <div id="rettangolo-mob" class="rettangolo pt-4">
+                             <img style="height:85px" id="traking" src="img/kerning_traking.png">
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space"></div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="titoli-testi">
+                    <p>
+                        VEDOVE E ORFANE
+                    </p>
+                </div>
+                <div class="paragrafi mob-pad-right-2">
+                    <p>Linee isolate create dai paragrafi che iniziano sull'ultima linea della pagina
+                        precedente,
+                        o di una colonna, sono dette
+                        <span class="parole-arancioni">VEDOVE</span>
+                        . Invece, quando un paragrafo termina sulla prima riga di una nuova pagina,
+                        o di una colonna, si ha una riga
+                        <span class="parole-arancioni">ORFANA</span>
+                        . La riga che non supera il 30% della giustezza del blocco di testo è da correggere.
+                    </p>
+                </div>
+                <div class="titoli-testi">
+                    <p>
+                        RIGHINO
+                    </p>
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Riga di fine paragrafo composta da meno di quattro battute.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <img style="height:400px" id="vedove" src="img/vedove_orfane.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space-2 mob-space"></div>
+
+<!-- 05 - Il colore -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 numero-cap ">
+                <p class="mob-cap"><a id="5">05</a> </p>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 titolo-capitolo-blu mb-4">
+                <p class="mob-size-2">
+                    il<span id="mob-lilla-colore" class="titolo-lilla"> <a id="mob-cap-05">colore</a></span>
+                </p>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <img style="height:100px" class="mob-hidden" src="img/puntini_arancioni.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 paragrafi mob-pad-right-2">
+                <p>
+                    Quando si progetta una grafica è necessario prestare molta attenzione alla scelta
+                    del <span class="parole-verdi">colore</span>, questo perché, ogni colore ha un significato
+                    ben preciso e ci deve essere corrispondenza tra il messaggio che si vuole trasmettere e
+                    il colore scelto per enfatizzare questo messaggio.<br/><br/>
+                    Per questo motivo gioca un ruolo fondamentale <span class="parole-arancioni">la psicologia del colore </span>
+                    che aiuta a capire meglio quale sia il colore da utilizzare nelle diverse situazioni.
+                    La psicologia del colore riguarda gli aspetti che influenzano la <span class="parole-verdi">mente</span>
+                    e le <span class="parole-verdi">emozioni</span>.La scelta di un colore ha il potere di suscitare un certo
+                    tipo di emozioni nelle persone, ad esempio sensazioni di benessere e sicurezza.
+                </p>
+            </div>
+
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <img style="height:400px" id="palette" src="img/palette_colori.png">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-4 paragrafi mob-pad-right-2">
+                    <p>
+                        Alcuni aspetti della psicologia del colore sono anche legati alla simbologia che questi rivestono e ai ricordi ai quali sono associati.
+                        Ma la scelta del colore è un aspetto che riguarda anche la mente. Il colore infatti <span
+                            class="parole-arancioni">stimola </span> il cervello,
+                        quando l’occhio percepisce un colore manda degli stimoli al cervello che li recepisce in pochissimi secondi,
+                        per questo motivo è importantissimo catturare l’attenzione dell’utente in modo tempestivo.
+                    </p>
+                </div>
+            </div>
+    </div>
+</section>
+
+<div class="space-2 mob-space"></div>
+
+<!-- Colori RGB e CMYK -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 titoli-testi">
+                    <p> <a id="5.1">COLORI </a><span class="titoli-testi-blu">RGB </span></p>
+                </div>
+
+                <div class="col-md-8"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="paragrafi mob-pad-right-2">
+                        <p>
+                            È l’acronimo per Red, Green e Blue (dall’inglese: rosso, verde e blu). Il “colore RGB” è una
+                            combinazione dei colori rosso verde e
+                            blu per formare i colori sullo schermo. È un metodo di colore a 3 canali, infatti si parla di
+                            <span class="parole-arancioni">tricromia </span>.
+                            È di tipo <span class="parole-verdi">additivo</span>: si ottiene il colore sommando le
+                            luminosità di ogni colore base fino a ottenere il colore desiderato. In questo modo,
+                            la somma di 100% di rosso, 100% di verde e 100% di blu dà come risultato il <span
+                                class="parole-arancioni">bianco </span>.
+                            Il metodo additivo si applica quando, partendo da uno sfondo nero, i colori sono generati da
+                            raggi di luce o da pixel luminosi,
+                            come nel caso di monitor e TV.È utilizzato in prevalenza per la creazione d'immagini rivolte al
+                            <span class="parole-verdi">web</span>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3"></div>
+
+                <div class="col-md-5">
+                    <div>
+                        <img style="height:330px" id="rgb" src="img/RGB.png">
+                    </div>
+                 </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="titoli-testi">
+                          <p>COLORI <span class="titoli-testi-blu">CMYK</span></p>
+                    </div>
+
+                    <div class="col-md-8"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="paragrafi mob-pad-right-2">
+                        <p>È l’acronimo per Cyan, Magenta, Yellow e blacK (ciano, magenta, giallo e nero).È un
+                            metodo di colore a 4 canali, detto <span class="parole-arancioni">quadricromia </span>.
+                            A differenza del metodo RGB, si tratta di una tecnica di colore di tipo <span class="parole-verdi">sottrattivo</span>: il colore si ottiene dalla differenza
+                            della luminosità di ogni colore. La somma di 100% di ciano, magenta e giallo non dà origine al nero,
+                            bensì al <span class="parole-arancioni">bistro</span>, una tonalità di marrone. Ecco perché è stato aggiunto il nero: per ottenere il colore
+                            nero pieno nei processi di stampa, per aggiungere maggiore contrasto e percezione di profondità e,
+                            infine, per eliminare alcuni difetti dei pigmenti colorati. È il modello di colore utilizzato dalle comuni
+                            stampanti.È utilizzato in prevalenza per la <span class="parole-verdi">tipografia</span>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3"></div>
+
+                <div class="col-md-5 ">
+                    <div class="row">
+                        <div>
+                            <img style="height:330px" id="cmyk" src="img/CMYK.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="space-2 mob-space-2"></div>
+
+<!-- 06 - La stampa -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 numero-cap ">
+                <p class="mob-cap"><a id="6">06</a></p>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+
+        <div class="row">
+            <div id="la" class="col-md-6 titolo-capitolo-blu mb-4 "><p>la<span id="mob-lilla-stampa" class="titolo-lilla">
+                <a id="mob-cap-06">stampa</a></span></p></div>
+            <div class="col-md-6"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 paragrafi mob-pad-right-2">
+                <p>Dopo aver affrontato tutti gli step per realizzare il nostro progetto
+                editoriale l'ultimo tassello riguarda la scelta del metodo di stampa.<br/>Avere familiarità con tutto ciò che
+                implica il processo di
+                stampa è importante per far sì che il materiale stampato esprima le <span class="parole-arancioni">intenzioni</span>
+                insite nel progetto.
+                Pianificare l'uso di un inchiostro dall'effetto particolare, di un tipo di carta o una specifica
+                finitura è possibile solo se si ha un'accurata
+                (e aggiornata) comprensione delle tecniche di stampa.<br/><br/>Per decidere quale tecnica di stampa
+                utilizzare bisogna tener conto di
+                alcuni fattori come il <span class="parole-verdi">materiale</span> scelto su cui stampare, o sul numero
+                di <span class="parole-arancioni">tirature</span>.
+                Inoltre bisogna tener presente anche dell’area da stampare.</p>
+            </div>
+
+            <div class="col-md-3"></div>
+            <div class="col-md-5">
+                <img id="layout_arancione" class="border-radius" style="weight:420px;height:420px" src="img/layout_arancione.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 paragrafi mob-pad-right-2 mob-mar-top-3 ">
+                <p> Ogni dispositivo di stampa ha una sua caratteristica resa cromatica. Ci sono alcune tecnologie di
+                    stampa o alcune stampanti, inoltre,
+                    che hanno un numero limitato di colori che possono stampare.</p>
+            </div>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-2">
+                <img style="weight:80px;height:80px" src="img/puntini_arancioni.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space-2 mob-space-2"></div>
+<!-- Offset -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 titolo-capitolo-blu">
+                <p><a class="mob-size-4" id="6.1">Offset</a></p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-4">
+                        <img  style="height:80px" class="mob-hidden" src="img/puntini_verdi.png">
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="paragrafi mob-pad-right-2">
+                            <p>
+                                Questo processo di stampa si basa sul principio secondo cui acqua e l’olio non si
+                                mescolano.
+                                La lastra di stampa incisa con processo
+                                <span class="parole-arancioni">elettronico</span> è trattata chimicamente in modo che
+                                l’immagine
+                                accetti l’inchiostro e respinga l’acqua. La lastra è avvolta intorno al cilindro
+                                rotante, sul quale
+                                l’immagine è bagnata e inchiostrata. L’immagine inchiostrata sulla lastra viene poi
+                                trasferita sul cilindro
+                                in caucciù. Il caucciù trasferisce l’ immagine sulla carta caricata intorno al cilindro
+                                (regolato secondo il
+                                tipo di carta utilizzato). Si tratta di un processo <span class="parole-verdi">planografico</span>
+                                veloce in cui la lastra è inchiostrata a ogni rotazione.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5">
+                        <img id="offset" class="border-radius" style="weight:300px;height:300px" src="img/1_offset.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 rettangolo mob-margin-5">
+                        <div class="testo-bianco mt-4">
+                            <h4 class="luminosità">VANTAGGI DELLA STAMPA OFFSET:</h4>
+                            <p>
+                            <ul>
+                                <li>Le immagini di alta qualità si ottengono con una stampa ad alta <b>RISOLUZIONE</b>
+                                </li>
+                                <li>È applicabile a un’ampia varietà di supporti, quali carta, tessuto, plastica, legno,
+                                    metallo, pelle e vetro.
+                                </li>
+                            <li>Il <b>COSTO</b> per unità di stampa diminuisce con l’aumentare della tiratura.
+                                </li>
+                                <li>Qualità, convenienza e rifiniture come la rilegatura sono ben controllabili in
+                                    lavori ad alta tiratura. La moderna stampa offset utilizza la tecnologia <b>COMPUTER-TO-PLATE</b>
+                                    (incisione della lastra controllata dal computer)che aumenta la convenienza e la qualità del
+                                    lavoro.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-md-12 vuoto"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 vuoto"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 vuoto"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img class="border-radius mob-space-neg mob-hidden" style="weight:130px;height:130px" src="img/2_offset.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4 ">
+                                <img class="mob-hidden" style="height:60px" src="img/puntini_verdi.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space-2 mob-space-3"></div>
+<!-- Serigrafia -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 titolo-capitolo-blu">
+                <p><a class="mob-size-4" id="6.2">Serigra-</a></p>
+                <p class="mob-size-5">fia</p>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                        <img style="height:60px" class="mob-hidden" src="img/puntini_verdi.png">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi mob-pad-right-2 mob-space-neg">
+                    <p class="mob-space-neg-4">Si tratta di una delle tecniche di stampa più antiche definita di tipo <span
+                            class="parole-arancioni">permeografico</span>:
+                        significa che l’inchiostro filtra attraverso un materiale permeabile, in particolare un tessuto.
+                        Il nome “serigrafia” deriva infatti dal latino “sericum” (“seta”) e dal greco “γράφειν”
+                        (“gràphein”,
+                        “scrivere”): i primi tessuti grazie a cui veniva realizzata la stampa serigrafica erano,
+                        appunto, in
+                        <span class="parole-verdi">seta</span>. Ancora oggi la stampa serigrafica si ottiene grazie a un
+                        tessuto, spesso in poliestere, che viene
+                        teso su un telaio in legno o metallo. In questo modo si ottiene la <span
+                                class="parole-arancioni">matrice</span>.
+                        Quindi le parti a risparmio, quelle in cui non deve passare l’inchiostro, vengono trattate con
+                        fotoemulsioni che
+                        rendono il tessuto impermeabile. Il telaio viene poi poggiato sul supporto di stampa e
+                        inchiostrato:
+                        l’inchiostro attraversa il tessuto nei punti in cui non è stato trattato e va a depositarsi
+                        correttamente sull’area di stampa.</p>
+                </div>
+            </div>
+
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="border-radius" id="serigrafia" style="weight:300px;height:300px"
+                             src="img/serigrafia.png">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                        <img style="height:60px" class="mob-hidden" src="img/puntini_verdi.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="paragrafi mob-pad-right-2 mob-mar-top-3">
+                            <p>Con questo procedimento si può stampare un solo colore alla volta, e per ogni <span
+                                    class="parole-verdi">colore</span> è necessario realizzare
+                                un’apposita matrice. Si tratta quindi di una tecnica molto costosa per basse tirature,
+                                che invece è più indicata
+                                quando dobbiamo stampare prodotti in un elevato numero di copie.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2"></div>
+
+                    <div class="col-md-6">
+                        <div class="rettangolo pt-4 pr-3 mob-margin-1">
+                                <h3 class="luminosità">
+                                    PERCHÈ SCEGLIERE LA STAMPA SERIGRAFICA
+                                </h3>
+                                <p class="testo-bianco mob-margin-1 ">La stampa serigrafica è l’unica tecnologia che permette di scegliere quale
+                                    spessore d' inchiostro vogliamo ottenere, e per questo è la più utilizzata in ambito di decorazione
+                                    industriale. Non solo, è l’unica che consente si utilizzare una grandissima varietà d'inchiostri:
+                                    lucidi, opachi, glitter, metallizzati, cangianti, iridescenti, luminescenti,
+                                    termocromici, fotocromici, retroriflettenti, soft-touch. Inoltre può essere
+                                    utilizzata su una grandissima varietà di supporti, come biciclette e caschi, scarpe,
+                                    borse, tende per esterno, pannelli decorativi in laminato plastico.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space-2"></div>
+<!-- Letterpress -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 titolo-capitolo-blu mob-space-neg-2">
+                <p><a class="mob-size-4" id="6.3">Letter-</a></p>
+                <p class="mob-size-5">press</p>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-4">
+                        <img style="height:60px" class="mob-hidden" src="img/puntini_verdi.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi mob-pad-right-2 mob-space-neg">
+                    <p class="mob-space-neg-5">
+                        La stampa tipografica più vicina alle origini. Questa tecnica ancora oggi è in tutto e per tutto
+                        simile alla stampa a caratteri mobili introdotta da Gutenberg a metà del Quattrocento, quella
+                        che
+                        ha dato origine al moderno concetto di font. Si tratta quindi di una <span class="parole-verdi">matrice piana</span>
+                        a rilievo:
+                        questo rilievo può essere ottenuto proprio inserendo su di un supporto dei blocchetti di metallo
+                        che riportano forme, per lo più lettere, in rilievo. Oppure, oggi, i cliché, cioè le matrici,
+                        in metallo zincato o fotopolimeri, possono essere incisi per ottenere il rilievo positivo della
+                        grafica da stampare. La matrice viene inchiostrata e su di essa la macchina preme il foglio che
+                        deve essere stampato.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="border-radius" style="weight:340px;height:340px" id="letterpress" src="img/letterpress.png">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-4">
+                        <img style="height:60px" class="mob-hidden" src="img/puntini_verdi.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="paragrafi mob-mar-top-3">
+                            <p>Il più grande pregio della stampa letterpress sta tutto in questa <span
+                                    class="parole-arancioni">pressione</span>.
+                                Soprattutto in abbinamento con carte pregiate, con un alto contenuto di fibre di cotone,
+                                infatti, la stampa tipografica garantisce un inconfondibile effetto materico. Caratteri
+                                e
+                                segni vengono non solo definiti grazie all’inchiostro, ma quasi incisi nel foglio
+                                stampato.
+                                Questo garantisce un effetto multisensoriale al prodotto finito. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2"></div>
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="rettangolo pt-3 mob-margin-1">
+                                    <div class="testo-bianco pt-2 pr-3">
+                                        <p>Si tratta di un procedimento piuttosto lento e costoso, che richiede per
+                                            essere valorizzato al meglio anche un supporto di pregio.
+                                            Questa tecnica di stampa è quella giusta se il tuo progetto punta a un
+                                            risultato raffinato e prezioso.
+                                            Spesso viene scelta per menù, partecipazioni, ma risulta di grande impatto
+                                            anche per biglietti da visita.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-1">
+                                <img style="height:60px" src="img/puntini_verdi.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2 mob-space"></div>
+
+<!-- Digitale -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 titolo-capitolo-blu">
+                <p><a class="mob-size-4" id="6.4">Digitale</a></p>
+            </div>
+
+            <div class="col-md-6">
+
+
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-4">
+                        <img style="height:60px" class="mob-hidden" src="img/puntini_verdi.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi mob-pad-right-2">
+                    <p>È di sicuro la tecnica di stampa con cui tutti, oggi, abbiamo più spesso a che fare.
+                        E, grazie alle recenti innovazioni, forse anche la più flessibile. Dalle nostre stampanti di
+                        casa alle fotocopiatrici dell’ufficio fino ai siti di stampa on-demand, tutto rientra nella
+                        grande
+                        famiglia delle tecniche di stampa digitale. La stampa digitale non richiede alcuna matrice.
+                        Per questo si tratta della tecnica migliore per tutti i progetti che richiedono tirature di
+                        <span class="parole-arancioni">pochissime</span> copie,
+                        o persino prodotti personalizzati. I tempi sono ridotti in quanto non è necessario preparare
+                        nessuna matrice
+                        e non bisogna pulire la macchina dopo il processo di stampa.</p>
+                </div>
+            </div>
+
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="border-radius" id="digitale" style="weight:270px;height:270px" src="img/digitale.png">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-4">
+                        <img style="height:60px" class="mob-hidden" src="img/puntini_verdi.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="paragrafi mob-pad-right-2 mob-mar-top-3 ">
+                            <p>
+                                All’interno di questa macro-categoria si distinguono due tipologie di tecnica di stampa
+                                digitale, in base al tipo d'inchiostro che viene utilizzato.
+                                Stampa a <span class="parole-verdi">toner</span>, in cui l’inchiostro è magnetico,
+                                ha un minimo di copie di 500 pezzi. Stampa a <span class="parole-arancioni">getto d'inchiostro</span>,
+                                in cui l’inchiostro è liquido, permette di realizzare poche copie o addirittura copie
+                                singole. Le immagini possono essere di dimensioni molto grandi ed è molto più costosa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2"></div>
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="rettangolo pt-4 pr-4 mob-margin-1">
+                                    <div class="testo-bianco">
+                                        <p>A differenza che in passato, oggi la stampa digitale ha un livello
+                                            qualitativo molto elevato,
+                                            un alto controllo cromatico e una risoluzione pari a quella della stampa
+                                            offset. Inoltre la stampa
+                                            digitale permette correzioni e modifiche fino all’ultimo minuto e di creare
+                                            documenti ha dato variabile per personalizzare ogni singola copia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-1">
+                                <img style="height:60px" src="img/puntini_verdi.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space-2"></div>
+<!-- Footer -->
+<section>
+    <footer class="bg-light text-center text-lg-start">
+
+        <div id="footer" class="text-center pt-4 pb-4">
+            <p id="mob-footer" style="color:white">Progetto a cura di Alessi Carolina e Migliore Martina <br/> Abana © 2020</p>
+        </div>
+
+    </footer>
+</section>
+
+<!-- menù -->
+<script src="js/menu.js"></script>
+
+<!-- menù telefono-->
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+</body>
+</html>
